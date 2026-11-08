@@ -16,7 +16,20 @@ Below the image: print job (thumbnail, filename, progress bar, layer, time left,
 
 ## Install
 
-1. Copy `prism-flashforge-card.js` **and** `creator5pro.webp` into `/config/www/prism-flashforge/`. Keep them in the same folder: the card finds the image next to the script.
+### HACS (recommended)
+
+1. In Home Assistant, open **HACS**.
+2. Click **⋮ → Custom repositories**.
+3. Repository: `https://github.com/rickkollins/FF-Creator-5-HA-Card`, Type: **Dashboard**, then **Add**.
+4. Search HACS for **Prism Flashforge Card**, open it and click **Download**.
+5. HACS adds the dashboard resource for you (`/hacsfiles/FF-Creator-5-HA-Card/prism-flashforge-card.js`). If it doesn't, add it by hand as in step 2 of the manual install, using that URL.
+6. Hard-refresh the browser (Ctrl+F5), then add the card **Prism Flashforge Creator 5 Pro** from the card picker.
+
+HACS installs everything in `dist/`, including the printer image. Updates appear in HACS whenever this repository changes.
+
+### Manual
+
+1. Copy `dist/prism-flashforge-card.js` **and** `dist/creator5pro.webp` into `/config/www/prism-flashforge/`. Keep them in the same folder: the card finds the image next to the script.
 2. **Settings → Dashboards → ⋮ → Resources → Add resource**
    - URL: `/local/prism-flashforge/prism-flashforge-card.js`
    - Type: **JavaScript module**
