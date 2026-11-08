@@ -1,6 +1,14 @@
 # Prism Flashforge Card – Creator 5 Pro
 
-A Home Assistant Lovelace card in the **Prism** style (dark/light glass, inset wells, glowing accents) for the **Flashforge Creator 5 Pro**. Live sensor values sit on top of the printer image:
+A Home Assistant Lovelace card in the **Prism** style (dark/light glass, inset wells, glowing accents) for the **Flashforge Creator 5 Pro**.
+
+| Printing (dark theme) | Heating, door open (light theme) |
+|---|---|
+| <img src="screenshots/printing-dark.png" alt="Card in dark theme while printing" width="400"> | <img src="screenshots/idle-light.png" alt="Card in light theme while heating with the door open" width="400"> |
+
+<sub>Screenshots use demo data.</sub>
+
+Live sensor values sit on top of the printer image:
 
 | Where on the image | What it shows |
 |---|---|
